@@ -1,1 +1,337 @@
 /* You can add global styles to this file, and also import other style files */
+html{ 
+        
+        background: #41b6c0;  
+        background: -moz-linear-gradient(360deg, #41b6c0 0%, #ffffff 100%);  
+        background: -webkit-linear-gradient(360deg, #41b6c0 0%,#ffffff 100%);  
+        background: linear-gradient(360deg, #41b6c0 0%,#ffffff 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41b6c0', endColorstr='#ffffff',GradientType=1 );  
+        width: 100%;
+        height: 100%;
+}
+body{
+        background: none;
+        font-family: 'Open Sans', sans-serif;
+}
+
+/*Login Scree*/
+
+.todo-login {
+        font-family: 'Open Sans', sans-serif; 
+} 
+.todo-login ul {
+        list-style-type: none; 
+}
+.todo-login h1,
+.todo-login h2,
+.todo-login h3,
+.todo-login h4,
+.todo-login h5,
+.todo-login h6 {
+        font-weight: 400; 
+}
+
+.todo-login h1 {
+        font-weight: 700;
+        letter-spacing: -1px; 
+}
+.todo-login a:hover {
+        text-decoration: none; 
+}
+.todo-login .btn {
+        border-radius: 0; 
+}
+.todo-login .btn:active {
+        box-shadow: none;
+        border-radius: 0px !important; 
+}
+.todo-login .btn:focus {
+        outline: thin dotted #fff;
+        outline-offset: 0; 
+}
+.todo-login .btn:hover, .todo-login .btn:focus {
+        color: #fff;
+}
+.todo-login .form-control {
+        box-shadow: none; 
+}
+.todo-login .form-control:focus {
+        border-color: #ff7000;
+        box-shadow: 0 0 0 2px rgba(96, 102, 162, 0.2);
+        -webkit-box-shadow: 0 0 0 2px rgba(96, 102, 162, 0.2);
+        -moz-box-shadow: 0 0 0 2px rgba(96, 102, 162, 0.2);
+        -o-box-shadow: 0 0 0 2px rgba(96, 102, 162, 0.2);
+        -ms-box-shadow: 0 0 0 2px rgba(96, 102, 162, 0.2);
+        transition: border-color 0.7s, box-shadow 0.7s;
+        -webkit-transition: border-color 0.7s, box-shadow 0.7s;
+        -moz-transition: border-color 0.7s, box-shadow 0.7s;
+        -o-transition: border-color 0.7s, box-shadow 0.7s;
+        -ms-transition: border-color 0.7s, box-shadow 0.7s; 
+}
+.todo-login .wrap {
+        width: 100%; 
+}
+.todo-login .top-buffer {
+        margin-top: 20px; 
+}
+ 
+.todo-login.signin-main .title {
+        text-align: center;
+        padding: 17% 0px;
+        color: #fff; 
+}
+.todo-login.signin-main .title h1 {
+        font-size: 54px; 
+}
+.todo-login.signin-main .wrap {
+        padding-top: 140px; 
+}
+.todo-login.signin-main .form-wrap {
+        margin: 0 auto;
+        height: 500px;
+        width: 1100px; 
+        position: relative;
+        margin-top: 14%;
+        box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);
+}
+.todo-login.signin-main .form-wrap .login {
+        background: #f8f8f8;
+        height: 500px;
+        width: 700px;
+        padding: 100px 0; 
+}
+ 
+.todo-login.signin-main .form-wrap .login .form-main {
+        width: 400px;
+        margin: 20px auto;
+}
+.todo-login.signin-main .form-wrap .login .form-footer {
+        width: 400px;
+        margin: 20px auto; 
+}
+.todo-login.signin-main .form-wrap .login .form-footer a {
+        color: #999;
+        font-size: 10pt; 
+}
+.todo-login.signin-main .form-wrap .login .form-footer a:hover {
+        text-decoration: none; 
+}
+.todo-login.signin-main .form-wrap .login .form-footer .fa-unlock-alt {
+        font-size: 10pt;
+        color: #fff;
+        border-radius: 50%;
+        padding: 5px 8px;
+        background: #ccc;
+        margin-right: 7px; 
+}
+.todo-login.signin-main .form-wrap .login .form-footer .fa-check {
+        font-size: 10pt;
+        color: #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background: #ccc;
+        margin-right: 7px; 
+}
+.todo-login.signin-main .form-wrap .login,
+.todo-login.signin-main .form-wrap .title {
+        float: left; 
+        position: relative
+}
+/*DashBoard*/
+.todo-login.signin-main .form-wrap .dashboard {
+        background: #f8f8f8;
+        height: 500px;
+        width: 700px;
+        padding: 20px 0; 
+}
+ 
+.todo-login.signin-main .form-wrap .dashboard .form-main {
+        width: 600px;
+        margin: 20px auto;
+}
+.todo-login.signin-main .form-wrap .dashboard .form-footer {
+        width: 400px;
+        margin: 20px auto; 
+}
+.todo-login.signin-main .form-wrap .dashboard .form-footer a {
+        color: #999;
+        font-size: 10pt; 
+}
+.todo-login.signin-main .form-wrap .dashboard .form-footer a:hover {
+        text-decoration: none; 
+}
+.todo-login.signin-main .form-wrap .dashboard .form-footer .fa-unlock-alt {
+        font-size: 10pt;
+        color: #fff;
+        border-radius: 50%;
+        padding: 5px 8px;
+        background: #ccc;
+        margin-right: 7px; 
+}
+.todo-login.signin-main .form-wrap .dashboard .form-footer .fa-check {
+        font-size: 10pt;
+        color: #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background: #ccc;
+        margin-right: 7px; 
+}
+.todo-login.signin-main .form-wrap .dashboard,
+.todo-login.signin-main .form-wrap .title {
+        float: left; 
+        position: relative
+}
+/*DashBoard*/
+
+.todo-login.signin-main .form-wrap .title {
+        width: 400px; 
+}
+.todo-login.signin-main .form-wrap .overlay {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 400px;
+        height: 500px;
+        background-image: url("/assets/Death_to_Stock_Tactile_1.jpg");
+        background-size: cover; 
+}
+.todo-login.signin-main .form-wrap .overlay:before {
+        background-color: rgba(45,178,190,0.8);
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%; 
+}
+.todo-login.signin-main .signin {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        background-color: #38b7c3;
+        color: #fff;
+        -webkit-transition: background-color 300ms linear;
+        -moz-transition: background-color 300ms linear;
+        -o-transition: background-color 300ms linear;
+        -ms-transition: background-color 300ms linear;
+        transition: background-color 300ms linear; 
+}
+.todo-login.signin-main .signin:hover {
+        background-color: #44cbd7; 
+}
+.todo-login.signin-main input[type="text"],
+.todo-login.signin-main input[type="password"] {
+        background-color: #fff;
+        padding-left: 20px;
+        border-radius: 0;
+        border: 2px solid #dedede;
+        margin-bottom: 16px;
+        color: #999;
+        height: 54px; 
+}
+.todo-login.signin-main .bounceIn {
+        opacity: 1;
+}
+.todo-login.signin-main .fail {
+        animation: shake .5s linear;
+        -webkit-animation: shake .5s linear;
+        -moz-animation: shake .5s linear; 
+}
+.signup{
+        background: #53b243;
+        color: #FFF;
+        padding-top: 14px;
+        padding-bottom: 14px;
+}
+.btn{
+       font-family: 'Open Sans', sans-serif;
+       font-weight: 600
+}
+.statusTxt{
+        position: absolute;
+        right: 4%;
+        top: 2%;
+}
+
+.day{
+        color: #ef5051;
+        font-family: 'Open Sans', sans-serif;
+       font-weight: 600 !important;
+       font-size: 30px;
+}
+.month{
+           color: #a8a7a7;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 22px;
+}
+.todo-login.signin-main .dashboard .form-control{
+        border:0 !important;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600 !important;
+        font-size: 28px;
+        color: #cacaca !important;
+        height: 95px
+}
+
+.dashboard .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #cacaca !important
+}
+.dashboard .form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #cacaca !important
+}
+.dashboard .form-control:-ms-input-placeholder { /* IE 10+ */
+ color: #cacaca !important
+}
+.dashboard .form-control:-moz-placeholder { /* Firefox 18- */
+  color: #cacaca !important
+}
+.dashboard .addToDo{
+        background: #fa6769;
+        width: 70px;
+        height: 70px;
+        color: #FFF;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600 !important;
+        font-size: 32px;
+        border-radius: 70px;
+        line-height: 0;
+        position: absolute;
+        top: 52px;
+        right: -29px;
+}
+.todo-login .btn.addToDo:active{
+        border-radius: 70px !important;
+}
+.dashboard .addToDo:hover{
+        background: #fc7a7a
+}
+.todo-group{
+        position: relative
+}
+.todo-list ul{
+        margin: 0;
+        padding: 0;
+        margin-top:40px 
+}
+.todo-list li{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500 !important;
+        font-size: 20px;
+        padding: 16px 10px; 
+        color: #9494a0;
+        border-bottom: 1px solid #d8dde2;
+        cursor: pointer
+}
+.todo-list li:hover{
+        background: #f6f6f6
+}
+.todo-list li:nth-child(odd){ 
+}
+.todo-list li span{
+        float:right
+}
+.error{
+        color: #F00;
+        font-size: 12px;
+}
+.completed{
+        text-decoration: line-through; 
+}
