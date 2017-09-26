@@ -9,7 +9,7 @@ export class UserService {
 
   constructor(private router:Router) {
     console.log('User service was created!!!');
-    console.log(this.registeredUser[0].firstName);
+    //console.log(this.registeredUser[0].firstName);
 
     //this.registeredUser = new User["{firstName:'Logan',lastName:'Arumugam',email:'aa',password:'pass}"];
    }

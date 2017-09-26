@@ -10,15 +10,16 @@ import { UserService } from "../user.service";
 })
 export class LoginComponent implements OnInit {
 
-  registeredUser:User = new User();
+  registeredUser:User;
 
-  loggedUser:regUser = new regUser()
+  loggedUser:regUser;
 
   constructor(private router:Router, private _service:UserService) { }
 
   ngOnInit() {
     console.log(this._service);
-    
+    this.loggedUser = new regUser();
+    this.registeredUser = new User()
   }
 
   signUp(){
