@@ -1,7 +1,7 @@
 <div class="form-main">
       <div class="form-group">
-            <input type="text" class="form-control" placeholder="Username" required="required">
-            <input type="password" class="form-control" placeholder="Password" required="required">
+            <input type="text" class="form-control" placeholder="Username" required="required" [(ngModel)]="loggedUser.userName">
+            <input type="password" class="form-control" placeholder="Password" required="required" [(ngModel)]="loggedUser.password">
             <button type="submit" class="btn btn-block signin" (click)="login()">Sign In</button>
             <span class="error">loginFailed</span>
       </div>
@@ -9,6 +9,6 @@
 <div class="form-footer">
       <div class="row">
             <div class="col-xs-7"></div>
-            <div class="col-xs-5 text-right"><a href="javascript:;" (click)="showSignUpcomp()">Sign Up</a></div>
+            <div class="col-xs-5 text-right"><a href="javascript:;" (click)="signUp()">Sign Up</a></div>
       </div>
 </div>

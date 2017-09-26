@@ -1,9 +1,9 @@
 <div class="form-main"> 
       <div class="form-group">
-            <input type="text" class="form-control" placeholder="First Name" required="required">
-            <input type="text" class="form-control" placeholder="Last Name" required="required">
-            <input type="text" class="form-control" placeholder="Email" required="required">
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="text" class="form-control" placeholder="First Name" required="required" [(ngModel)]="registeredUser.firstName">
+            <input type="text" class="form-control" placeholder="Last Name" required="required" [(ngModel)]="registeredUser.lastName"> 
+            <input type="text" class="form-control" placeholder="Email" required="required" [(ngModel)]="registeredUser.email">
+            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="registeredUser.password">
             <button type="submit" class="btn btn-block signup" (click)="register()">Register</button>
       </div> 
 </div>
