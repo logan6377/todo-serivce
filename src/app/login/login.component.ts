@@ -10,7 +10,7 @@ import { UserService } from "../user.service";
 })
 export class LoginComponent implements OnInit {
 
-  registeredUser:User;
+  //registeredUser:User;
 
   loggedUser:regUser;
 
@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     console.log(this._service);
     this.loggedUser = new regUser();
-    this.registeredUser = new User()
+    //this.registeredUser = new User()
   }
 
   signUp(){

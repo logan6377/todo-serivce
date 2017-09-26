@@ -9,6 +9,7 @@ import { SignupModule } from "./signup/signup.module";
 import { LoginComponent } from "./login/login.component";
 import { SignupComponent } from "./signup/signup.component";
 import { UserService } from "./user.service";
+import { ReactiveFormsModule } from "@angular/forms";
 
 const tdRouts: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -25,6 +26,7 @@ const tdRouts: Routes = [
     BrowserModule,
     LoginModule,
     SignupModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(tdRouts)
   ],
   providers: [UserService],
@@ -32,3 +34,5 @@ const tdRouts: Routes = [
 })
 
 export class AppModule { }
+
+

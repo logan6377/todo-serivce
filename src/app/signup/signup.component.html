@@ -1,9 +1,11 @@
 <div class="form-main"> 
+      <form [formGroup]="registerForm">
       <div class="form-group">
-            <input type="text" class="form-control" placeholder="First Name" required="required" [(ngModel)]="registeredUser.firstName">
-            <input type="text" class="form-control" placeholder="Last Name" required="required" [(ngModel)]="registeredUser.lastName"> 
-            <input type="text" class="form-control" placeholder="Email" required="required" [(ngModel)]="registeredUser.email">
-            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="registeredUser.password">
-            <button type="submit" class="btn btn-block signup" (click)="register()">Register</button>
+            <input type="text" class="form-control" placeholder="First Name" required="required" name="firstname" formControlName="firstname" [(ngModel)]="registeredUser.firstName">
+            <input type="text" class="form-control" placeholder="Last Name" required="required" name="lastName" formControlName="lastname" [(ngModel)]="registeredUser.lastName"> 
+            <input type="text" class="form-control" placeholder="Email" required="required" name="email" formControlName="email" [(ngModel)]="registeredUser.email">
+            <input type="password" class="form-control" placeholder="Password" name="password" formControlName="password" [(ngModel)]="registeredUser.password">
+            <button type="submit" class="btn btn-block signup" (click)="register()" [disabled]="registerForm.invalid">Register</button>
       </div> 
+      </form>
 </div>
