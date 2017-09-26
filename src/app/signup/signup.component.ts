@@ -24,7 +24,7 @@ export class SignupComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.registeredUser = new User();
+    this.registeredUser = new User()
 
     this.registerForm = new FormGroup({
       firstname : new FormControl('aaa', Validators.required),
@@ -32,7 +32,8 @@ export class SignupComponent implements OnInit {
       email: new FormControl('', Validators.required),
       password: this.passwordcheck
     });      
-  }
+
+  } 
 
   register(){ 
     this._uService.registerUser(this.registeredUser);  
