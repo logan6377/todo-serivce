@@ -18,16 +18,14 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     console.log(this._service);
-    this.loggedUser = new regUser();
-    //this.registeredUser = new User()
+    this.loggedUser = new regUser(); 
   }
 
   signUp(){
     this.router.navigate(['/signup']);
   }
 
-  login(){
-    //console.log(this.loggedUser)
+  login(){ 
     this._service.loginUser(this.loggedUser);
   }
 

@@ -10,12 +10,17 @@ import { LoginComponent } from "./login/login.component";
 import { SignupComponent } from "./signup/signup.component";
 import { UserService } from "./user.service";
 import { ReactiveFormsModule } from "@angular/forms";
+import { DashboardModule } from "./dashboard/dashboard.module";
+import { DashboardComponent } from "./dashboard/dashboard.component";
 
 const tdRouts: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
   {path:'login', component:LoginComponent},
-  {path:'signup', component:SignupComponent}
+  {path:'signup', component:SignupComponent},
+  {path:'dashboard', component:DashboardComponent}
 ]
+
+
 
 
 @NgModule({
@@ -27,6 +32,7 @@ const tdRouts: Routes = [
     LoginModule,
     SignupModule,
     ReactiveFormsModule,
+    DashboardModule,    
     RouterModule.forRoot(tdRouts)
   ],
   providers: [UserService],

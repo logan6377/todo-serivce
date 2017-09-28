@@ -9,3 +9,7 @@ export class regUser{
      userName:string;
      password:string
 }
+
+export class todo{
+     todoItems:string; 
+}
