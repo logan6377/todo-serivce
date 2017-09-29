@@ -3,7 +3,7 @@
     <div class="form-main">
       <div class="form-group">
             <h2 class="day">data</h2>
-            <p class="month">Month <span class="text-right" style="float:right">Total Task : taskcount</span></p>
+            <p class="month">Month <span class="text-right" style="float:right">Total Task : {{taskcount}}</span></p>
             <div class="todo-group">
               <input type="text" class="form-control" placeholder="Add Your Todos" required="required" [(ngModel)]="todosData"> 
               <button type="submit" class="btn btn-block addToDo" (click)="addToDoList()" (todoList)="newtodo($event)">+</button>

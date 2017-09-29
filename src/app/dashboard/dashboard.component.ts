@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from "../user.service";
 import { todo } from "../user";
 
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -9,17 +10,30 @@ import { todo } from "../user";
 })
 export class DashboardComponent implements OnInit {
 
-  todosData:todo;
+  todosData:string; 
+  taskcount:number=0;
 
-  constructor(private todos:UserService) { }
+  constructor(private todos:UserService) { 
+      
+  }
 
   ngOnInit() {
-    
+   // this.todosData = new todo()
+  } 
+
+  ngAfterContentChecked(){
+     this.taskcount = this.todos.getCount();
   }
 
 
-  addToDoList(){
-    this.todos.addItemList(this.todosData); 
+  addToDoList(){  
+    if(this.todosData != ''){
+      this.todos.addItemList(this.todosData);   
+    }
+    this.todosData = ""; 
   }
+
+
+  
 
 }

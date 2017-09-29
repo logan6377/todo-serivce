@@ -12,6 +12,7 @@ import { UserService } from "./user.service";
 import { ReactiveFormsModule } from "@angular/forms";
 import { DashboardModule } from "./dashboard/dashboard.module";
 import { DashboardComponent } from "./dashboard/dashboard.component";
+import { FilterPipe } from './filter.pipe';
 
 const tdRouts: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -25,7 +26,8 @@ const tdRouts: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

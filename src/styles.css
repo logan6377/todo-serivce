@@ -22,6 +22,9 @@ body{
 .todo-login ul {
         list-style-type: none; 
 }
+.dashboard{
+        padding: 0 !important
+}
 .todo-login h1,
 .todo-login h2,
 .todo-login h3,

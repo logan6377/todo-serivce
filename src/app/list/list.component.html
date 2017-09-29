@@ -1,1 +1,1 @@
-<li *ngFor="let item of fetchData">{{item}}<span><img src="../assets/delete.png" ></span></li> 
+<li *ngFor="let item of fetchData; let ind = index" >{{item}}<span><img src="../assets/delete.png" (click)="removeItem(ind)"></span></li> 
