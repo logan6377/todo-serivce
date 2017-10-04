@@ -20,7 +20,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     console.log(this._service);
-    this.loggedUser = new regUser(); 
+    this.loggedUser = new regUser()
+
+
   }
 
   signUp(){
