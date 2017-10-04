@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { DashboardModule } from "./dashboard/dashboard.module";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { FilterPipe } from './filter.pipe';
+import { HttpModule } from '@angular/http';
 
 const tdRouts: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -30,6 +31,7 @@ const tdRouts: Routes = [
     FilterPipe
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     LoginModule,
     SignupModule,

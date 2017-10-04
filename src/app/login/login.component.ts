@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { User, regUser } from "../user";
-import { UserService } from "../user.service";
+import { UserService } from "../user.service"; 
 
 @Component({
   selector: 'app-login',
@@ -9,6 +9,8 @@ import { UserService } from "../user.service";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+  profile = {};
 
   //registeredUser:User;
 
@@ -28,5 +30,11 @@ export class LoginComponent implements OnInit {
   login(){ 
     this._service.loginUser(this.loggedUser);
   }
+
+  loadUser(){
+    this._service.getUser().subscribe( data => this.profile = data)     
+  }
+
+
 
 }

@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { User, regUser, todo } from "./user";
 import { Router } from "@angular/router";
+import { Http} from "@angular/http";
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class UserService {
@@ -10,7 +12,7 @@ export class UserService {
   taskcount:number=0;
   styleDash:boolean=false
 
-  constructor(private router:Router) {
+  constructor(private router:Router, private http:Http) {
     console.log('User service was created!!!');
     let defaultuser = new User();
     defaultuser.firstName = "Logan";
@@ -52,6 +54,11 @@ export class UserService {
 
   getDashBoardClass(){
     return this.styleDash
+  }
+
+  getUser(){
+    return this.http.get('https://conduit.productionready.io/api/profiles/eric')
+    .map((res:any) => res.json() );
   }
 
 
